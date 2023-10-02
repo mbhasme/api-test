@@ -19,7 +19,7 @@ public class createRepo {
     // @Test
     public void createRepotestcase() throws IOException {
         PropertyConfigurator.configure("log4j.properties");
-        RestFWLogger.startTestCase("Start CreateRepo Testcase");
+        RestFWLogger.startTestCase("Start CreateRepo Testcase---");
         String endpoint = createURL.getBaseURI("/user/repos");
         String req_payload = payloadGenerator.generateStringPayload("createRepo.json");
         String bearer_token = Auth.bearerToken();
