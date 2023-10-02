@@ -60,7 +60,7 @@ public class createRepo {
     public void deleteRepo() throws IOException {
         PropertyConfigurator.configure("log4j.properties");
         RestFWLogger.startTestCase("Start deleteRepo Testcase");
-        String req_payload = payloadGenerator.generateStringPayload("createRepo.json");
+        String req_payload = payloadGenerator.generateStringPayload("pojoclasses/createRepo.json");
         String bearer_token = Auth.bearerToken();
         String deletendpoint = createURL.getBaseURI("/repos/mbhasme/") + CommonUtilFunctions.getResponsekeyvalue(req_payload,"name") ;
         response = BaseClass.deleteRequest(deletendpoint,bearer_token);
