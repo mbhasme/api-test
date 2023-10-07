@@ -8,6 +8,7 @@ import io.restassured.response.Response;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import resources.pojoclasses.createRepoPOJO;
 import utility.*;
 
